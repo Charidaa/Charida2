@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap');
+
+        body {
+            background-color: rgb(135, 224, 240);
+        }
+
+        h1 {
+            font-family: 'Kanit', sans-serif;
+            color: rgb(0, 0, 0);
+        }
+
+        img {
+            margin-top: 2em;
+            margin-bottom: 2em;
+        }
+
+        table {
+            border-style: solid;
+            border-width: 3px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        button {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 class="center" id="header">สวัสดีชาวโลก</h1>
+    <div class="center"><button type="button"
+            onclick="document.getElementById('header').style.color='red'">เปลี่ยนสี</button>
+        <div>
+
+
+            <button onclick="document.getElementById('myImage').src='Idle.png'">เเมวยืน</button>
+            <img id="myImage" src="Idle.png" style="width: 200px;">
+            <button onclick="document.getElementById('myImage').src='Slide.png'">เเมวสไลด์</button>
+
+            <div>
+            <button onclick="document.getElementById('Show').innerHTML = (toThaiDateString(date1));">Show time</button>
+            <p id="Show"></p>
+        </div>
+            <div class="btn-table">
+                <button onclick="document.getElementById('show-table').style.display = ''">แสดงตาราง</button>
+                <button onclick="document.getElementById('show-table').style.display = 'none'">ซ่อนตาราง</button>
+            </div>
+            <div class="cover" style="display: flex;align-items: center;justify-content: center;">
+                <div class="cover-table" id="show-table" style="display: none;">
+                    <h4>ตารางแสดงสินค้า</h4>
+                    <table border="1" >
+        
+                        <tr>
+                            <th>ราการที่ 1</th>
+                            <th>ราการที่ 2</th>
+                            <th>ราการที่ 3</th>
+        
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>16</td>
+                            <td>32</td>
+                        </tr>
+                        <tr>
+                            <td>64</td>
+                            <td>128</td>
+                            <td>256</td>
+                        </tr>
+                    </table>
+                  
+                </div>
+               
+            </div>
+
+            <div class="home5" id="home5">
+                <label for="number">
+                    <h6>Number #1</h6>
+                    <input type="text" id="number1" class="number">
+                </label>
+                <label for="number">
+                    <h6>Number #2</h6>
+                    <input type="text" id="number2" class="number">
+                </label>
+                <label for="number">
+                    <h6>Number #3</h6>
+                    <input type="text" id="number3" class="number">
+                </label>
+                <p id="sum1">ค่าเฉลี่ย</p>
+                <p id="sum2">ค่าสูงสุด </p>
+                <p id="sum3">ค่าต่ำสุด </p>
+                <div class="btn-fornum">
+                    <button onclick="Calculate()">Calculate</button>
+                </div>
+        
+        
+            </div>
+
+
+
+</body>
+
+</html>
+
+<script src="script.js">
+
+</script>
